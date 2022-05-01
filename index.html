@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CGI Game</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <div class="fifty">
+        <h1>
+            Snake Game
+        </h1>
+        <form action="">
+            <input type="checkbox" id="snakeGame">
+            <br>
+            <label>Check to play this game</label>
+        <div id="snakeDiv" style="display:none">
+            <h3>Where on the screen snake will be place</h2>
+                <form action="" id="formSnake">
+                    <input type="radio" id="leftSnake" name="snakeCheck" value="sfgj">
+                    <label>Entire screen</label>
+                    <br>
+                    <input type="radio" id="leftSnake" name="snakeCheck" value="left" checked>
+                    <label>Left</label>
+                    <br>
+                    <input type="radio" id="rightSnake" name="snakeCheck" value="right">
+                    <label>Right</label>
+                    <br>
+                    <input type="radio" id="topLeftSnake" name="snakeCheck" value="topleft">
+                    <label>Top left</label>
+                    <br>
+                    <input type="radio" id="topRightSnake" name="snakeCheck" value="topright">
+                    <label>Top right</label>
+                    <br>
+                    <input type="radio" id="bottomLeftSnake" name="snakeCheck" value="bottomleft">
+                    <label>Bottom left</label>
+                    <br>
+                    <input type="radio" id="bottomRightSnake" name="snakeCheck" value="bottomright">
+                    <label>Bottom right</label>
+                </form>
+        </div>
+    </div>
+
+    <div class="fifty" style="left:50%">
+        <h1>
+            Osu-like Game
+        </h1>
+        <form action="">
+            <input type="checkbox" id="osuGame">
+            <br>
+            <label>Check to play this game</label>
+        </form>
+        <div id="osuDiv" style="display:none">
+            <h3>Where on the screen osu will be place</h2>
+                <input type="radio" id="leftOsu" name="osuCheck" value="aze">
+                <label>Entire screen</label>
+                <br>
+                <input type="radio" id="leftOsu" name="osuCheck" value="left">
+                <label>Left</label>
+                <br>
+                <input type="radio" id="rightOsu" name="osuCheck" value="right" checked>
+                <label>Right</label>
+                <br>
+                <input type="radio" id="topLeftOsu" name="osuCheck" value="topleft">
+                <label>Top left</label>
+                <br>
+                <input type="radio" id="topRightOsu" name="osuCheck" value="topright">
+                <label>Top right</label>
+                <br>
+                <input type="radio" id="bottomLeftOsu" name="osuCheck" value="bottomleft">
+                <label>Bottom left</label>
+                <br>
+                <input type="radio" id="bottomRightOsu" name="osuCheck" value="bottomright">
+                <label>Bottom right</label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" id="easy" name="diffOsu" value="easy" checked>
+                <label>Easy</label>
+                <br>
+                <input type="radio" id="medium" name="diffOsu" value="medium">
+                <label>Medium</label>
+                <br>
+                <input type="radio" id="hard" name="diffOsu" value="hard">
+                <label>Hard</label>
+                <br>
+                <input type="radio" id="impossible" name="diffOsu" value="impossible">
+                <label>Impossible</label>
+                <br>
+                <input type="radio" id="glhf" name="diffOsu" value="glhf">
+                <label>GLHF</label>
+            </div>
+        </div>
+        <input id="submit" type="submit">
+    </form>
+
+</body>

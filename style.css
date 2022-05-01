@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    min-width: 500px;
+    min-height: 500px;
+    background-color: #eee;
+}
+
+/* Menu */
+
+.fifty {
+    display: flex;
+    width: 50%;
+    height: 80%;
+    text-align: center;
+    flex-direction: column;
+}
+
+#submit {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5);
+}
+
+/* End Menu */
+
+/* Snake game css */
+
+#firstGrid {
+    display: grid;
+}
+
+#snakeBox {
+    display: grid;
+    background-color: #222;
+}
+
+.snake {
+
+}
+
+.snakeHead {
+    background-color: green;
+    border-radius: 45%;
+}
+
+.snakePart {
+    background-color: chartreuse;
+    border-radius: 35%;
+}
+
+.apple {
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* End Snake game css */
+
+/* Osu game css */
+
+.round { border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-image: url('https://www.logiciels.pro/wp-content/uploads/2021/05/golang-avis-prix-alternatives-logiciel.webp');
+    background-size: contain;
+    background-position: center;
+    max-width: 100px;
+    min-width: 50px;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    border: 5px #222 solid;
+}
+
+
+.overround {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background: none;
+    max-width: 250px;
+    min-width: 125px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: 5px #222 solid;
+}
+
+@keyframes mini {
+    from {
+        transform:  translate(-50%, -50%) scale(1);
+        border: 5px #222 solid;
+    } to {
+        transform:  translate(-50%, -50%) scale(0.40);
+        border: 10px #222 solid;
+    }
+}
+
+/* End Osu game css */
